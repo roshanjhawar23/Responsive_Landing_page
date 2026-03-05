@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luminary — A premium digital agency crafting bold, beautiful digital experiences." />
+  <title>Luminary — Digital Agency</title>
+
+  <!-- Google Fonts: Display + Body pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       - Starts transparent, transitions to solid on scroll (JS)
+       - Hamburger menu toggled for mobile (JS)
+  ============================================================ -->
+  <header id="navbar">
+    <nav class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Luminary Home">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Luminary</span>
+      </a>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA button (desktop) -->
+      <a href="#contact" class="nav-cta" aria-label="Start your project">Start a Project</a>
+
+      <!-- Hamburger button (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       - Full-viewport height, centered content
+       - Staggered entrance animations via CSS classes + JS
+  ============================================================ -->
+  <section id="home" class="hero">
+
+    <!-- Decorative background elements -->
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Digital Agency · Est. 2024</p>
+      <h1 class="hero-headline reveal reveal--delay-1">
+        We craft digital<br />
+        <em>experiences</em> that<br />
+        leave a mark.
+      </h1>
+      <p class="hero-subtext reveal reveal--delay-2">
+        Strategy, design, and engineering — united under one roof
+        to transform ambitious brands into iconic presences.
+      </p>
+      <div class="hero-actions reveal reveal--delay-3">
+        <!-- Primary CTA — smooth scrolls to contact section -->
+        <a href="#contact" class="btn btn--primary">Begin Your Journey</a>
+        <!-- Secondary CTA -->
+        <a href="#services" class="btn btn--ghost">Our Work ↓</a>
+      </div>
+    </div>
+
+    <!-- Decorative scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="about section-padding">
+
+    <div class="container">
+
+      <div class="about-layout">
+
+        <!-- Left: text content -->
+        <div class="about-text">
+          <span class="section-tag reveal">About Us</span>
+          <h2 class="section-heading reveal reveal--delay-1">
+            Obsessed with craft.<br /><em>Driven by results.</em>
+          </h2>
+          <p class="body-text reveal reveal--delay-2">
+            Founded in 2024, Luminary is a boutique digital agency built around
+            one belief: that great design is never just decoration — it's a
+            competitive advantage. We partner with forward-thinking brands to
+            build digital products that are as beautiful as they are effective.
+          </p>
+          <p class="body-text reveal reveal--delay-2">
+            Our small, senior team means every project gets undivided attention.
+            No juniors handed your work. No templates dressed up as custom.
+            Just thoughtful strategy and meticulous execution, every time.
+          </p>
+
+          <!-- Stats row -->
+          <div class="about-stats reveal reveal--delay-3">
+            <div class="stat">
+              <span class="stat-number" data-target="120">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="98">0</span><span class="stat-unit">%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="8">0</span><span class="stat-unit">yr</span>
+              <span class="stat-label">Industry Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: decorative image card -->
+        <div class="about-visual reveal reveal--delay-2">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="about-avatar">
+                <span class="avatar-initials">LM</span>
+              </div>
+              <blockquote class="about-quote">
+                "Good design is as little design as possible."
+                <cite>— Dieter Rams</cite>
+              </blockquote>
+              <div class="about-tags">
+                <span class="tag">Strategy</span>
+                <span class="tag">Design</span>
+                <span class="tag">Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services" class="services section-padding">
+
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag reveal">What We Do</span>
+        <h2 class="section-heading reveal reveal--delay-1">
+          Services built for<br /><em>modern ambitions.</em>
+        </h2>
+        <p class="section-subheading reveal reveal--delay-2">
+          From strategy to launch and beyond — we cover every layer of the digital stack.
+        </p>
+      </div>
+
+      <!-- Services grid — 3 columns on desktop, 1 on mobile -->
+      <div class="services-grid">
+
+        <article class="service-card reveal reveal--delay-1">
+          <div class="service-icon" aria-hidden="true">◈</div>
+          <h3 class="service-title">Brand Strategy</h3>
+          <p class="service-desc">
+            Positioning, voice, and visual identity systems that make your brand
+            impossible to ignore — and easy to remember.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay-2">
+          <div class="service-icon" aria-hidden="true">◉</div>
+          <h3 class="service-title">UI / UX Design</h3>
+          <p class="service-desc">
+            Interfaces engineered for delight. We blend rigorous user research
+            with editorial-level aesthetics to create products people love.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay-3">
+          <div class="service-icon" aria-hidden="true">◎</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">
+            Blazing-fast, accessible, and pixel-perfect builds. We write clean
+            code that scales — whether it's a landing page or a full platform.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay-1">
+          <div class="service-icon" aria-hidden="true">⬡</div>
+          <h3 class="service-title">SEO & Growth</h3>
+          <p class="service-desc">
+            Technical SEO, content strategy, and conversion optimisation
+            baked in from day one — not bolted on as an afterthought.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay-2">
+          <div class="service-icon" aria-hidden="true">⬢</div>
+          <h3 class="service-title">Motion Design</h3>
+          <p class="service-desc">
+            Animation and micro-interaction design that breathes life into
+            your digital presence and keeps users engaged longer.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay-3">
+          <div class="service-icon" aria-hidden="true">◇</div>
+          <h3 class="service-title">Ongoing Support</h3>
+          <p class="service-desc">
+            Retainer partnerships for brands who want a dedicated creative
+            and technical team on call as they grow and evolve.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="contact section-padding">
+
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <!-- Left: copy -->
+        <div class="contact-text">
+          <span class="section-tag reveal">Get In Touch</span>
+          <h2 class="section-heading reveal reveal--delay-1">
+            Let's build something<br /><em>remarkable.</em>
+          </h2>
+          <p class="body-text reveal reveal--delay-2">
+            Have a project in mind? We'd love to hear about it.
+            Fill in the form and we'll get back to you within 24 hours.
+          </p>
+
+          <div class="contact-details reveal reveal--delay-3">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <a href="mailto:hello@luminary.studio">hello@luminary.studio</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">☎</span>
+              <a href="tel:+15550001234">+1 (555) 000-1234</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⌖</span>
+              <span>San Francisco, CA — Remote Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-wrapper reveal reveal--delay-2">
+          <!--
+            NOTE: This form uses a JS submit handler to show a success message.
+            For a real project, replace the JS handler with a backend endpoint
+            (e.g. Formspree, Netlify Forms, or your own API).
+          -->
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+                <span class="field-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="New project inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message
+              <span class="btn-arrow">→</span>
+            </button>
+
+          </form>
+
+          <!-- Success message (hidden until form submit) -->
+          <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+            <span class="success-icon">✦</span>
+            <h3>Message received!</h3>
+            <p>We'll be in touch within 24 hours.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <a href="#home" class="nav-logo footer-logo" aria-label="Back to top">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Luminary</span>
+      </a>
+
+      <p class="footer-copy">© 2024 Luminary Studio. All rights reserved.</p>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Dribbble">Db</a>
+        <a href="#" aria-label="GitHub">GH</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
